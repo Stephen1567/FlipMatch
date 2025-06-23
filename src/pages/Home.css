@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  background: #fef9f6;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  
+}
+
+/* Outer container */
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 12px 40px;
+  border-bottom: 1px solid #E6E8EB;
+}
+
+/* Logo section */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Resize the top-left logo to medium size */
+.logo-img {
+  width: 250px;
+  height: auto;
+}
+
+/* Centered large logo in main section */
+.center-logo {
+  width: 1000px;
+  height: auto;
+  margin-top: -400px;      
+  margin-bottom: -400px;
+}
+
+/* Nav section */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  color: #121717;
+}
+
+/* Main content */
+.home-main {
+  padding: 0px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 200px;
+}
+
+/* Intro text */
+.intro-text {
+  font-weight: 700;
+  font-size: 28px;
+  color: #121717;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* Level selector box */
+.selector-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.level-select-box {
+  width: 448px;
+  height: 56px;
+  border: 1px solid #DBE3E6;
+  border-radius: 12px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.level-select {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  outline: none;
+  color: #121717;
+}
+
+/* Theme buttons */
+.theme-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 960px;
+}
+
+.theme-btn {
+  padding: 0 16px;
+  height: 44px;
+  border: 1px solid #DBE3E6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #121717;
+  cursor: pointer;
+}
+
+.theme-btn.selected {
+  background-color: #EEE;
+}
+
+/* Start button */
+.start-button-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+.start-btn {
+  width: 480px;
+  height: 48px;
+  background: rgba(244, 162, 97, 0.55);
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #121717;
+  cursor: pointer;
+}

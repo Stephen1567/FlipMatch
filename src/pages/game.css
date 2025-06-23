@@ -1,0 +1,139 @@
+/* Base reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #fffdfc;
+}
+
+/* Container layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 110vh;
+  width: 100vw;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.home-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 8px 40px;
+  border-bottom: 1px solid #E6E8EB;
+  box-sizing: border-box; /* ✅ Prevents padding from overflowing */
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 250px;
+  height: auto;
+  vertical-align: middle; /* Aligns logo image vertically in line */
+  margin-top: 0;           /* Ensure no weird spacing */
+  margin-bottom: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Info bar */
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Selectors */
+.selectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.selectors button {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.selectors button.selected {
+  background-color: #f4a261;
+  color: white;
+}
+
+/* Game grid */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  margin: 32px auto;             /* ✅ Ensures grid is centered */
+  width: fit-content;            /* ✅ Shrinks grid to exact card width */
+  justify-content: center;       /* ✅ Center cards in each row */
+}
+
+/* Card */
+.card {
+  width: 120px; /* or larger */
+  height: 160px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* For front (no cut) */
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+/* Back image should fill the whole card */
+.card img.back {
+  object-fit: cover;
+}
+
+/* Cancel */
+.cancel {
+  margin: 16px auto 32px;
+  padding: 12px 32px;
+  background: rgba(194, 182, 173, 0.55);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
