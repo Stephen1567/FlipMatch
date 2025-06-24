@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './game.css';
-import logo from '../IMG/logo.png';
-import cardBack from '../IMG/back.png';
 
 // Theme assets
 const emojiList = ['💎', '🚀', '🧩', '🎮', '🕹️', '🧠', '🎲 ', '📀', '🪄', '🧱'];
@@ -97,7 +95,7 @@ export default function Game() {
     <div className="container">
       <header className="home-header">
         <div className="logo-container">
-          <img className="logo-img" src={logo} alt="FlipMatch Logo" />
+          <img className="logo-img" src="IMG/logo.jpeg" alt="FlipMatch Logo" />
         </div>
         <div className="nav-links">
           <div className="nav-item" onClick={() => navigate('/')}>Home</div>
@@ -122,7 +120,7 @@ export default function Game() {
                   <img src={value} alt="card" />
                 )
               ) : (
-                <img src={cardBack} alt="back" className="back" />
+                <img src="IMG/back.jpeg" alt="card back" />
               )}
             </button>
           );

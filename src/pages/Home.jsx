@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Home.css";
-import logo from '../IMG/logo.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
@@ -22,7 +21,7 @@ export default function Home() {
       {/* Header */}
       <header className="home-header">
         <div className="logo-container">
-          <img className="logo-img" src={logo} alt="FlipMatch Logo" />
+          <img className="logo-img" src="IMG/logo.jpeg" alt="FlipMatch Logo" />
         </div>
         <div className="nav-links">
           <div className="nav-item">Home</div>

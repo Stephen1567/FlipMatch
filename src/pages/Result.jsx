@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Result.css';
-import logo from '../IMG/logo.png';
 
 export default function Result() {
   const location = useLocation();
@@ -24,7 +23,7 @@ export default function Result() {
       {/* Header (same as Game/Home) */}
       <header className="home-header">
         <div className="logo-container">
-          <img className="logo-img" src={logo} alt="FlipMatch Logo" />
+          <img className="logo-img" src="IMG/logo.jpeg" alt="FlipMatch Logo" />
         </div>
         <div className="nav-links">
           <div className="nav-item" onClick={() => navigate('/')}>Home</div>
